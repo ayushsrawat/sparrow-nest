@@ -1,0 +1,113 @@
+/* ResultsPage.css */
+.results-page {
+    min-height: 100vh;
+    background-color: #f3f4f6;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .results-header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: white;
+    border-bottom: 1px solid #d1d5db;
+    padding: 1rem 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header-container {
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .header-title {
+    font-size: 1.875rem;
+    font-weight: 600;
+    color: #2563eb;
+    margin-right: 1.5rem;
+    user-select: none;
+    letter-spacing: 0.05em;
+  }
+  
+  .header-link {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .header-link:hover {
+    text-decoration: underline;
+  }
+  
+  .search-bar-wrapper {
+    flex-grow: 1;
+    max-width: 600px;
+  }
+  
+  .results-main {
+    flex-grow: 1;
+    padding: 1.5rem;
+  }
+  
+  .results-container {
+    max-width: 768px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .results-summary {
+    font-size: 1rem;
+    color: #4b5563;
+    margin-bottom: 1.5rem;
+  }
+  
+  .results-summary strong {
+    color: #2563eb;
+  }
+  
+  .loading-message {
+    text-align: center;
+    padding: 2rem 0;
+    color: #6b7280;
+  }
+  
+  .loading-icon {
+    width: 2rem;
+    height: 2rem;
+    margin-bottom: 0.5rem;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .error-message {
+    color: #dc2626;
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+  
+  /* No results message */
+  .no-results-message {
+    text-align: center;
+    padding: 2rem 0;
+    color: #6b7280; /* Gray color */
+    font-size: 1rem;
+  }
+  
+  /* Results list container */
+  .results-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* Space between items */
+    text-align: left;
+  }
